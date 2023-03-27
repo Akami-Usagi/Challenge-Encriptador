@@ -26,6 +26,19 @@ formulario.addEventListener("submit", (event) =>{
 
     
 const decodificar = document.querySelector(".decode-button")
+const copiar = document.querySelector(".copy-button")
+
+function copiarTexto(){
+    const texto = document.querySelector(".text-area").value;
+    if (texto == "") {
+        alert("Campo de texto vacío")
+    }else{
+        const copiado = navigator.clipboard.writeText(texto);
+        alert("Mensaje copiado: " + texto);
+        return copiado;
+    }
+    
+}
 
 function decodificador(){
     const textArea = document.querySelector(".text-area")
@@ -54,3 +67,4 @@ function decodificador(){
 }
 
 decodificar.addEventListener("click", decodificador)
+copiar.addEventListener("click", copiarTexto)

@@ -50,6 +50,15 @@
     border-radius: 10px;
 }
 
+.botones-textview{
+    display: flex;
+    flex-direction: column;
+}
+
+.copy-button{
+    margin-top: 1rem;
+}
+
 .code{
     display: flex;
     flex-direction: column;
