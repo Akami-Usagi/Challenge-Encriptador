@@ -10,18 +10,19 @@
 </head>
 <body>
     <header class="header">
-        <div><img src="imagenes/Stargazer.svg" alt="Logo Stargazer" class="header-logo"></div>
-        <div><h1 class="header-text">Stargazer Studio</h1></div>
+        <img src="imagenes/text_logo.svg" alt="Logo Stargazer" class="header-logo">
+        <h1 class="header-text">Stargazer Studio</h1>
     </header>
     <p class="title">Ingrese el texto que desea codificar</p>
     <section class="section">
-        
-        <form action="submit" class="decode">
-            <textarea name="text" class="text-field" cols="30" rows="10"></textarea>
-            <button>Codificar</button>
-        </form>
-        <div class="code">
-            <textarea name="text" class="text-area" cols="30" rows="10"></textarea>
+        <div class="codificar">
+            <form action="submit" class="decode">
+                <textarea name="text" class="text-field" placeholder="Ingrese el Texto a Codificar"></textarea>
+                <button class="codificar__button">CODIFICAR</button>
+            </form>
+        </div>
+        <div class="codificar">
+            <textarea name="text" class="text-area" placeholder="Aqui aparecerá el texto codificado o decodificado"></textarea>
             <div class="botones-textview">
                 <button class="decode-button">Decodificar</button>
                 <button class="copy-button">Copiar Texto</button>
@@ -30,9 +31,12 @@
     </section>
 
     <footer class="footer">
-        <h4>Codificado por:</h4>
-        <h3>Camilo Arango Escobar</h3>
-        <h4>akami.3ds@gmail.com</h4>
+        <img src="imagenes/text_logo.svg" alt="Stargazer Logo" class="footer__logo">
+        <div>
+            <h4 class="footer__text__up">Codificado por:</h4>
+            <h3 class="footer__text">Camilo Arango Escobar</h3>
+            <h4 class="footer__text__down">akami.3ds@gmail.com</h4>
+        </div>
     </footer>
 
     <script src="scripts/index.js" type="module"></script>
