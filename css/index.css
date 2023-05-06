@@ -47,14 +47,16 @@ body{
     padding: 2rem;
     background-color: var(--back-color-light);
     border-radius: 20px;
-    margin-right: 2rem;
+    
 }
 
 .section{
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: auto;
+    gap: 30px;
     
 }
 
@@ -179,4 +181,45 @@ body{
 
 .footer__text__down{
     margin-top: -1rem;
+}
+
+@media only screen and (max-width: 480px){
+    .codificar{
+        width: 80%;
+    }
+
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .header-text{
+        text-align: center;
+        margin: initial;
+    }
+
+    .header-logo{
+        margin: initial;
+        
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .text-area{
+        width: 70%;
+    }
+
+    .text-field{
+        width: 70%;
+    }
+
 }
